@@ -127,6 +127,7 @@ For a more practical hands on tutorial I recommend codecademy: https://www.codec
 Elements I recommend you learn before moving on to CSS:
 
 * p (paragraph)
+* a (hyperlink)
 * h1 (header 1. HTML also has 6 header tags where size of the text is the only difference.)
 * ol (ordered list)
 * ul (unordered list)
