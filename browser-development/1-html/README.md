@@ -120,7 +120,7 @@ Overall put all together a simple html page should look like this:
 
 ## Other resources
 
-The only thing left to learn with HTML is the individual elements which I won't be covering individually. For a refrence to the different HTML elemenets I recommend the MDN: https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+The only thing left to learn with HTML is the individual elements which I won't be covering individually. For a refrence to the different HTML elements I recommend the MDN: https://developer.mozilla.org/en-US/docs/Web/HTML/Element
 
 For a more practical hands on tutorial I recommend codecademy: https://www.codecademy.com/learn/learn-html
 
