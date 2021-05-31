@@ -273,6 +273,11 @@ Before moving on to Javascript I would suggest having a good grasp on the follow
 * `border`
 * `padding`
 * `margin`
+* `display`
+* `height`
+* `width`
+* `left`
+* `top`
 * `position`
 * `flex` (This one may take a while to get. Don't be discouraged.)
 
