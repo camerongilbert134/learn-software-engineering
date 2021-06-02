@@ -53,7 +53,7 @@ The doctype is something you should put at the top of all your html files. This 
 <!DOCTYPE html>
 ```
 
-You will notice the above has no version information. That's what I mean by it got easier. It prior versions you would need to be specific about which version of html you wanted.
+You will notice the above has no version information. That's what I mean by it got easier. In prior versions you would need to be specific about which version of html you wanted.
 
 ## The basic elements for every document
 
