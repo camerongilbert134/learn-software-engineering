@@ -1,0 +1,60 @@
+:root {
+    --color-scheme-primary: rgb(44, 0, 70);
+    --color-scheme-secondary: rgb(2, 51, 0);
+    --color-scheme-font-primary: rgb(255, 245, 210);
+    --color-scheme-font-secondary: white;
+}
+
+body {
+    background-color: var(--color-scheme-secondary);
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--color-scheme-font-secondary);
+}
+
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--color-scheme-font-primary);
+}
+
+nav a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--color-scheme-font-secondary);
+}
+
+.odd, .even {
+    background-color: var(--color-scheme-primary);
+}
+
+nav {
+    background-color: var(--color-scheme-primary);
+    padding: 10px;
+    margin: 10px;
+}
+
+article > p {
+    padding: 10px;
+    margin: 10px;
+}
+
+a:visited {
+    color: var(--color-scheme-font-secondary);
+}
+
+a:hover {
+    color: gray;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li::before {
+    content: "\1F48E \1F98D"
+}
