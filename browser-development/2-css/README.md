@@ -239,7 +239,7 @@ At-rules are a set of CSS functionality that interacts with the clients device o
 
 @font-face {
   font-family: "Some font";
-  src: url("path/to/some/font.woff2") format("woff2");;
+  src: url("path/to/some/font.woff2") format("woff2");
 }
 
 /* these can be nested */
@@ -251,12 +251,6 @@ At-rules are a set of CSS functionality that interacts with the clients device o
   }
 }
 ```
-
-## Media-queries
-
-Media queries let you apply styles based on details about the users device. One of the most common media queries is to check the user display aspect ratio to determine if they are browsing in landscape or portrait mode.
-
-Media queries are defined with @
 
 ## Other resources
 
