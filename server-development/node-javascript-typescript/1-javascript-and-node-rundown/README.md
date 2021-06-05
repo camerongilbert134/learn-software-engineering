@@ -1359,6 +1359,68 @@ try {
 
 Using the technique above you can define your own error classes and then handle multiple types of errors in your error handling easily! Remember you can also override the constructor, store extra information in the error, and extend it's functionality!
 
+## Exporting and importing
+
+As your application grows beyond a simple script you will want to seperate your code into multiple files. To do this we can export and import from and to any other file.
+
+You can export a const, let, function or class. To do this put `export` before the declaration.
+
+```js
+export const someConst = "Exporting!"
+
+export function someFunction() {
+    return "Also being exported!"
+}
+
+export class SomeClass {
+    beingExported = "YUP";
+}
+```
+
+To then `import` these in another file you would need to use the `import` keyword. You follow this up by `{}` squigly brackets. Inside these brackets you will want to put the name of what you are importing seperated by commas. After the brackets you will want to put the `from` keyword followed by the path to the file you want to import in quotations.
+
+```js
+import { someConst, someFunction, SomeClass } from "./someFile.mjs";
+```
+
+You can rename these exports when importing. We do this with the `as` keyword. This gets placed after the name of an exported variable then after the `as` you will put the new name that you want for your variable.
+
+```js
+import { someConst as someOtherConst, someFunction, SomeClass as SomeOtherClass } from "./someFile.mjs";
+```
+
+You can combine all the exported variables into one object using a wildcard `*` and the `as` keyword to name the object.
+
+```js
+import * as someObject from "./someFile.mjs";
+
+console.log(someObject.someConst); // prints "Exporting!"   This is how we access the combined imports.
+```
+
+You can also add a `default` export with the `default` keyword. Add the word `default` after `export`.
+
+```js
+export default class SomeClass {}
+```
+
+When importing a default import you do not need to use the `{}` squigly brackets and can even name this import anything you want.
+
+```js
+import SomeDefault from "./someFile.mjs";
+```
+
+You can also import both the default and the other exports all with one statement. After you define the default import name you will need to add a comma then either `* as <SOME_VAR_NAME>` or using `{<LIST OF IMPORTS>}` and then finish with the `from` and file path.
+
+```js
+import SomeDefault, * as someObject from "./someFile.mjs";
+```
+
+or 
+
+```js
+import someDefault, { someConst, someFunction } from "./someFile.mjs";
+```
+
 ## Generators / Iterators
 
 I'm going to skip this one for now. May add it in later but I'm so tired of this so here is a link to some docs instead:
@@ -1378,7 +1440,37 @@ for await (const request of server) {
 }
 ```
 
-## Resources
+## Spread, Rest and Destructuring
+
+Much like the last one I'm going to phone this one in. Spread and Destructuring allows you to easily put together and take apart lists and objects.
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
+
+The one big thing I want you to remember about Spread and Rest is that it can be used in function parameters. Here is an example.
+
+```js
+function sumWithSpreadAndDestructuring(...args) {
+    return sum(args);
+}
+
+function sum(numberList) {
+    let result = 0;
+    for (const value of numberList) {
+        result += value;
+    }
+    return result;
+}
+
+console.log(sumWithSpreadAndDestructuring(10, 5, -13, Math.PI)); // prints 5.141592653589793
+
+console.log(sumWithSpreadAndDestructuring(...[10, 5, -13, Math.PI])); // prints 5.141592653589793
+
+console.log(sum([10, 5, -13, Math.PI])); // prints 5.141592653589793
+```
+
+# Resources
 
 As a generic javascript resource the MDN is very good: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
 
