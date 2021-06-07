@@ -1,0 +1,16 @@
+{
+  "name": "express-forms-example",
+  "version": "0.0.1",
+  "description": "An example of getting form data with koa",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"No tests here\""
+  },
+  "author": "Nathan Burchill",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-promise-router": "^4.1.0"
+  }
+}
