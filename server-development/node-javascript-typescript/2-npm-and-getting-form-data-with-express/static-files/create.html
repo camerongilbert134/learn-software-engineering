@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog | Create Blog Post</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Blog!</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/create.html">Write Blog Post</a>
+        </nav>
+    </header>
+    <main>
+        <form action="/api/blog" method="POST" class="content fill-height">
+            <div>
+                <div class="input-group">
+                    <span>Author</span>
+                    <div>
+                        <div class="labelled-input">
+                            <label for="blogFormName">Name</label>
+                            <input id="blogFormName" name="name" type="text" placeholder="Smitty Werben Jagerman Jensen">
+                        </div>
+                        <div class="labelled-input">
+                            <label for="blogFormEmail">Email</label>
+                            <input id="blogFormEmail" name="email" type="email" placeholder="number1@example.com">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="labelled-input">
+                    <label for="blogFormTitle">Title</label>
+                    <input id="blogFormTitle" name="title" type="text" placeholder="10 Reasons I Am Number 1! Number 2 Will Surprise You!">
+                </div>
+            </div>
+            <div class="fill-height">
+                <div class="labelled-input fill-height">
+                    <label for="blogFormContent">Blog Content</label>
+                    <textarea id="blogFormContent" name="content" placeholder="10) I am the best! 9) Everyone loves me! 8) I have a hat that says that I am! ..."></textarea>
+                </div>
+            </div>
+            <div class="button-container">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
