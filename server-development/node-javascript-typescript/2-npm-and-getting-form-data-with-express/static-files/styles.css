@@ -208,9 +208,6 @@ textarea::placeholder {
     width: 50%;
     display: inline-block;
 }
-.pagination:first-child {
-
-}
 
 .pagination:last-child {
     text-align: right;
