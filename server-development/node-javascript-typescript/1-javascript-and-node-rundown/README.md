@@ -1474,6 +1474,8 @@ console.log(sum([10, 5, -13, Math.PI])); // prints 5.141592653589793
 
 As a generic javascript resource the MDN is very good: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
 
+Also the nodejs docs: https://nodejs.org/dist/latest-v16.x/docs/api/
+
 Codecademy has some nice interactive javascript tutorials but no free ones for node unfortunately: https://www.codecademy.com/learn/introduction-to-javascript
 
 There is a lot here and I don't expect you to retain it. You can use this as a resource as well.
